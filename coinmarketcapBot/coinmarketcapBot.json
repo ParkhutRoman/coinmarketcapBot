@@ -1,0 +1,294 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "coinmarketcapBot",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "AddAlert"
+    },
+    {
+      "name": "AddCoin"
+    },
+    {
+      "name": "Help"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "RemoveAlert"
+    },
+    {
+      "name": "RemoveCoin"
+    },
+    {
+      "name": "ShowPortfolio"
+    }
+  ],
+  "entities": [
+    {
+      "name": "count"
+    },
+    {
+      "name": "currency"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "actions": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "hi",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "i need help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "help me",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "what can i do?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "portfolio",
+      "intent": "ShowPortfolio",
+      "entities": []
+    },
+    {
+      "text": "what are the available options?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "add alert",
+      "intent": "RemoveAlert",
+      "entities": []
+    },
+    {
+      "text": "remove alert",
+      "intent": "RemoveAlert",
+      "entities": []
+    },
+    {
+      "text": "show portfolio",
+      "intent": "ShowPortfolio",
+      "entities": []
+    },
+    {
+      "text": "add 1 btc",
+      "intent": "AddCoin",
+      "entities": [
+        {
+          "entity": "count",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "currency",
+          "startPos": 6,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "notify when portfolio grows by 1 percent",
+      "intent": "AddAlert",
+      "entities": [
+        {
+          "entity": "count",
+          "startPos": 31,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "remove 1 btc",
+      "intent": "RemoveCoin",
+      "entities": [
+        {
+          "entity": "count",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "currency",
+          "startPos": 9,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "notify portfolio grows by 67",
+      "intent": "AddAlert",
+      "entities": [
+        {
+          "entity": "count",
+          "startPos": 26,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "please add 1 bitcoin",
+      "intent": "AddCoin",
+      "entities": [
+        {
+          "entity": "count",
+          "startPos": 11,
+          "endPos": 11
+        },
+        {
+          "entity": "currency",
+          "startPos": 13,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "i want to add 1 btc",
+      "intent": "AddCoin",
+      "entities": [
+        {
+          "entity": "count",
+          "startPos": 14,
+          "endPos": 14
+        },
+        {
+          "entity": "currency",
+          "startPos": 16,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "remove 576 btc",
+      "intent": "RemoveCoin",
+      "entities": [
+        {
+          "entity": "count",
+          "startPos": 7,
+          "endPos": 9
+        },
+        {
+          "entity": "currency",
+          "startPos": 11,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "remove 100 btc",
+      "intent": "RemoveCoin",
+      "entities": [
+        {
+          "entity": "count",
+          "startPos": 7,
+          "endPos": 9
+        },
+        {
+          "entity": "currency",
+          "startPos": 11,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "pls show portfolio",
+      "intent": "ShowPortfolio",
+      "entities": []
+    },
+    {
+      "text": "add 234554 bitcoin",
+      "intent": "AddCoin",
+      "entities": [
+        {
+          "entity": "count",
+          "startPos": 4,
+          "endPos": 9
+        },
+        {
+          "entity": "currency",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "add 3564 ethereum",
+      "intent": "AddCoin",
+      "entities": [
+        {
+          "entity": "count",
+          "startPos": 4,
+          "endPos": 7
+        },
+        {
+          "entity": "currency",
+          "startPos": 9,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "add 0.5 btc",
+      "intent": "AddCoin",
+      "entities": [
+        {
+          "entity": "count",
+          "startPos": 4,
+          "endPos": 6
+        },
+        {
+          "entity": "currency",
+          "startPos": 8,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "add 0.5 bitcoin",
+      "intent": "AddCoin",
+      "entities": [
+        {
+          "entity": "count",
+          "startPos": 4,
+          "endPos": 6
+        },
+        {
+          "entity": "currency",
+          "startPos": 8,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "remove 0.5 btc",
+      "intent": "RemoveCoin",
+      "entities": [
+        {
+          "entity": "count",
+          "startPos": 7,
+          "endPos": 9
+        },
+        {
+          "entity": "currency",
+          "startPos": 11,
+          "endPos": 13
+        }
+      ]
+    }
+  ]
+}
